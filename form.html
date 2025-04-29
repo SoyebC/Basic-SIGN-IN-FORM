@@ -1,0 +1,51 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Handling</title>
+    <link rel="stylesheet" href="form.css">
+ </head>
+ <body>
+    <div class="container">
+        <form action="./form.php" method="post">
+            <section id="top_section">
+            <input type="text" name="user_name" placeholder="enter user_name" >
+            <br>
+            <input type="email" name="email" placeholder="enter email"  >
+            <br>
+            <input type="password" name="user_password" placeholder="enter user_password" >
+            <br>
+        </section>
+            <label for="">Choose Your skills</label>
+            <br>
+            <input type="checkbox" name="skills[]" id="" value="PHP"><span>PHP</span>
+            <br>
+            <input type="checkbox" name="skills[]" id="" value="Java"><span>Java</span>
+            <br>
+            <input type="checkbox" name="skills[]" id="" value="Javascript"><span>Javascript</span>
+            <br>
+            <input type="checkbox" name="skills[]" id="" value="SQL"><span>SQL</span>
+            <br>
+            <section id="Gender_section">
+            <label for="">choose Your Gender</label>
+            <br>
+            <input type="radio" value="male" name="gender"><span>Male</span>
+            <br>
+            <input type="radio" value="female" name="gender"><span>Female</span>
+            <br>
+        </section>
+            <select name="city" id="city_section">
+                <option value="">Select Your city</option>
+                <option value="Noida">Noida</option>
+                <option value="Delhi">Delhi</option>
+                <option value="Chennai">Chennai</option>
+                <option value="Banglore">Banglore</option>
+            </select>
+            <br>
+            <button type="submit">Sing Up</button>
+            
+        </form>
+    </div>
+ </body>
+ </html>
